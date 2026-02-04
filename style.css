@@ -1,0 +1,59 @@
+html, body, #map {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.legend {
+    position: absolute;
+    z-index: 1000;
+    bottom: 20px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 12px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.legend h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.legend div {
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+}
+
+.marker {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Hospital symbol - circle */
+.marker.hospital {
+    width: 18px;
+    height: 18px;
+    background: #d32f2f;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+/* Road symbol - horizontal line */
+.marker.road {
+    width: 28px;
+    height: 6px;
+    background: #1976d2;
+    border-radius: 3px;
+}
+
+.note {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #555;
+}
